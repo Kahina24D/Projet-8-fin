@@ -59,8 +59,8 @@ body {
   .about-content {
 
 	width: 100%; /* S'adapte à l'écran */
-	padding-inline: 100px; /* Paddings internes pour le contenu */
-	padding-block: 100px;
+	/* padding-inline: 100px; /* Paddings internes pour le contenu */
+	/* padding-block: 100px; */ 
 	display: flex;
 	gap: 5px; /* Ajoute de l'espace entre les enfants */
   }
@@ -78,16 +78,18 @@ body {
 }
 
 .picture {
+    padding: 1rem;
+    width: 300px; /* Largeur du conteneur */
+    max-width: 100%; /* Réduction dynamique sur les écrans plus petits */
 	flex: 1;
 	margin: 0 20px;
 	z-index: 0;
 	
 }
 .picture img{
-	width: 350px;
-	height: 350px;
-      margin: auto;
-	  padding: 0;
+width: 100%;
+height: auto;
+
 
 }
 #about-me {
@@ -327,6 +329,12 @@ input[type="submit"] {
 		left: 0;
 		z-index: -1;
 	}
+    .picture img{
+        width: 100%;
+        height: auto;
+        
+        
+        }
 	.about-me__title{
 		text-align: center;
 		margin-top: 1em;
@@ -414,4 +422,3 @@ input[type="submit"] {
 
 	  
 }
-
