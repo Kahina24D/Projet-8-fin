@@ -78,15 +78,16 @@ body {
     margin: 0 20px;
     z-index: 0
 }
-
+/* 
 .picture img {
     width: 100%;
     /* height:auto; */
-}
+*/
 
 #about-me {
     flex: 2;
-	padding: 1rem;
+
+    
 }
 
 .about-me__title {
@@ -425,9 +426,13 @@ input[type="submit"] {
         align-items: center;
         justify-content: center;
         width: 100%
+ 
     }
-
-
+   
+ .picture img {
+        
+        width: 100%;
+    }
 
    
 }
