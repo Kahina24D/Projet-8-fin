@@ -4,20 +4,68 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<meta name="description" content="Nina Carducci, une photographe passionnée basée à Bordeaux, ma mission est de rendre immortels vos plus moments, avec de séances shooting, et aussi en retouchant vos anciennes photos et la réalisation de beaux albums">
-	<link rel="preload" as="image" href="./assets/images/slider/1440/ryoji-1440.webp" type="image/webp">
-
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
-	<link rel="stylesheet" href="./assets/style.min.css"  media="all">
-	<link rel="preload" as="image" href="./assets/images/nina.webp">
-
-<meta name="keywords"
-		content="photographe,photographie,evenement,edition,traitement,portfolio,portrait,trifs,Bordeaux">
-
+	<script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "LocalBusiness",
+          "name": "Nom de l'entreprise",
+          "image": "assets/images/nina.webp", 
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "68 Avenue Alsace-Lorraine",
+            "addressLocality": "Bordeaux",
+            "postalCode": "33200"
+          },
+          "telephone": "05 56 67 78 89",
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Monday",
+              "opens": "10:00",
+              "closes": "19:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Tuesday",
+              "opens": "10:00",
+              "closes": "19:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Wednesday",
+              "opens": "10:00",
+              "closes": "19:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Thursday",
+              "opens": "10:00",
+              "closes": "19:00"
+            },
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": "Friday",
+              "opens": "10:00",
+              "closes": "19:00"
+            }
+          ]
+        }
+    </script>  
+	<!-- Description du site (évitez la duplication) -->
+	<meta name="description" content="Nina Carducci, une photographe passionnée basée à Bordeaux. Mon objectif est d'immortaliser vos moments grâce à des séances photos, ainsi que de retoucher vos anciennes photos et créer des albums de qualité.">
 	
-	<title>Nina Caducci,Photographe a Bordeaux et ile-de-France</title>
-	<meta name="descreption" content="une presentation de mon travail de photographe et une grille de mes tarifs.">
+	<!-- Préchargement d'images -->
+	<link rel="preload" as="image" href="./assets/images/slider/1440/ryoji-1440.webp" type="image/webp">
+	<link rel="preload" href="./assets/images/nina.webp" type="image/x-icon">
+
+	<!-- Feuilles de style -->
+	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="./assets/style.min.css" media="all">
+	
+	<!-- Mots-clés pour améliorer le référencement -->
+	<meta name="keywords" content="photographe, photographie, événement, édition, traitement, portfolio, portrait, Bordeaux, Ile-de-France">
+
+	<title>Nina Carducci, Photographe à Bordeaux et Île-de-France</title>
 </head>
 
 <body>
@@ -26,14 +74,22 @@
 			<h1 class="name">Nina Carducci</h1>
 			<div class="nav">
 				<nav>
-					<ul>
-						<li><a href="#about">À propos</a></li>
-						<li><a href="#gallery">Galerie</a></li>
-						<li><a href="#services">Service</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-								target="_blank"><img src="assets/images/instagram.png" alt="image instagram"></a></li>
-					</ul>
+					
+						<a href="#about">À propos</a>
+						<a href="#gallery">Galerie</a>
+						<a href="#services">Service</a>
+						<a href="#contact">Contact</a>
+						<a class="social-link" 
+						href="https://www.instagram.com/ninacarducci.photo/?hl=fr" 
+						target="_blank" 
+						 
+						>
+						 <span class="visually-hidden">Lien vers Instagram</span>
+						 <img src="assets/images/instagram.png" alt="Logo Instagram">
+					 </a>
+					 
+						
+					
 				</nav>
 			</div>
 		</div>
@@ -44,62 +100,77 @@
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-						class="active" aria-current="true" aria-label="Slide 1">  <!-- Icône décorative -->
-						
-						<!-- Texte accessible aux technologies d'assistance -->
-						<span class="visually-hidden"></span></button>
+						class="active" aria-current="true" >
+
+						<span class="visually-hidden">aller l avant</span></button>
 
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-						aria-label="Slide 2"><span class="visually-hidden"></span></button>
+						><span class="visually-hidden">aller arrier</span></button>
+
+
 					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-						aria-label="Slide 3"><span class="visually-hidden"></span></button>
+						><span class="visually-hidden">rester sur l image</span></button>
 				</div>
 				<div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <picture>
-                            <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash420.webp" media="(max-width: 420px)">
-                            <source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash780.webp" media="(max-width: 780px)">
-                            <img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp" class="d-block w-100" alt="personne marchant sur un passage piéton">
-                        </picture>
-                    </div>
-                    <div class="carousel-item">
-                        <picture>
-                            <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash420.webp" media="(max-width: 420px)">
-                            <source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash780.webp" media="(max-width: 780px)">
-                            <img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp" class="d-block w-100" alt="public dans un concert"loading="lazy" >
-                        </picture>
-                    </div>
-                    <div class="carousel-item">
-                        <picture>
-                            <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash420.webp" media="(max-width: 420px)">
-                            <source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash780.webp" media="(max-width: 780px)">
-                            <img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp" class="d-block w-100" alt="un mari embrasse son épouse">
-                        </picture>
-                    </div>
-                </div>
+					<div class="carousel-item active">
+						<picture>
+							<source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash420.webp"
+								media="(max-width: 420px)">
+							<source srcset="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash780.webp"
+								media="(max-width: 780px)">
+							<img src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
+								class="d-block w-100" alt="Passage piéton fréquenté avec une personne marchant, véhicules en arrière-plan">
+						</picture>
+					</div>
+					<div class="carousel-item">
+						<picture>
+							<source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash420.webp"
+								media="(max-width: 420px)">
+							<source srcset="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash780.webp"
+								media="(max-width: 780px)">
+							<img src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
+								class="d-block w-100" alt="public dans un concert" loading="lazy">
+						</picture>
+					</div>
+					<div class="carousel-item">
+						<picture>
+							<source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash420.webp"
+								media="(max-width: 420px)">
+							<source srcset="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash780.webp"
+								media="(max-width: 780px)">
+							<img src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
+								class="d-block w-100" alt="un mari embrasse son épouse">
+						</picture>
+					</div>
+				</div>
 				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
 					data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
+					<span class="carousel-control-prev-icon"></span>
+					<span class="visually-hidden" style="opacity: 1; color: #000; background-color: #fff;">
+						Image précédente dans le carrousel
+					</span>
 				</button>
 				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
 					data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
+					<span class="carousel-control-next-icon"></span>
+					<span class="visually-hidden" style="opacity: 1; color: #000; background-color: #fff;">
+						Image suivante dans le carrousel
+					</span>
 				</button>
+
 			</div>
 
 		</section>
 		<section id="about">
 			<div class="about-content">
 				<div class="picture left">
-				
+
 					<picture>
 						<source srcset="./assets/images/nina420.webp" media="(max-width: 420px)">
 						<source srcset="./assets/images/nina780.webp" media="(max-width: 780px)">
 						<img src="./assets/images/nina.webp" alt="photo de nina caraducci" width="438">
 					</picture>
-					
+
 
 				</div>
 				<div id="about-me">
@@ -125,7 +196,7 @@
 				<div class="gallery" style="display: none">
 					<img data-gallery-tag="Concert" class="gallery-item"
 						src="./assets/images/gallery/concerts/aaron-paul-467.webp" width="440" height="440"
-						alt="Salle de concert" >
+						alt="Salle de concert" loading="lazy">
 					<img data-gallery-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/ali-morshedlou-467.webp" width="440" height="440"
 						alt="Portrait d un homme en costume">
@@ -140,7 +211,7 @@
 						alt="Homme fermant les yeux au soleil">
 					<img data-gallery-tag="Mariages" class="gallery-item"
 						src="./assets/images/gallery/mariage/jakob-owens-467.webp" width="440" height="440"
-						alt="Couple marié heureux"  loading="lazy">
+						alt="Couple marié heureux" loading="lazy">
 					<img data-gallery-tag="Portrait" class="gallery-item"
 						src="./assets/images/gallery/portraits/nino-van-prattenburg-467.webp" width="440" height="440"
 						alt="portrait d'une femme deriere une cloture" loading="lazy">
@@ -221,29 +292,33 @@
 		<div class="container">
 			<div class="form-container">
 				<p>Une question ? Une demande de devis ?</p>
-				<p> N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
+				<p>N’hésitez pas à m’écrire ! Je vous répondrai en moins de 24 heures.</p>
 				<form action="" method="post">
-					<label for="nom">Nom</label>
-					<input type="text" name="nom" id="nom">
-					<label for="email">Email</label>
-					<input type="email" name="email" id="email">
-					<label for="message">Message</label>
-					<textarea name="message" id="message" cols="30" rows="10"></textarea>
+					<label for="nom">Nom </label>
+					<input type="text" name="nom" id="nom" >
+					
+	
+					<label for="email">Email </label>
+					<input type="email" name="email" id="email"  >
+				
+	
+					<label for="message">Message </label>
+					<textarea name="message" id="message" cols="30" rows="10" 
+					></textarea>
+				
+	
 					<input type="submit" value="Envoyer" />
 				</form>
 			</div>
 			<div class="picture right">
-				<img src="./assets/images/camera.webp" alt="Appareil photo" loading="lazy">
+				<img src="./assets/images/camera.webp" alt="Appareil photo représentant la photographie" loading="lazy">
 			</div>
-			<nav>
-				
-			</nav>
 		</div>
 	</footer>
 	
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" ></script>
+		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.min.js" defer></script>
 	<script src="./assets/scriptsc.min.js" defer></script>
 </body>

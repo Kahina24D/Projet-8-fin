@@ -22,20 +22,18 @@ body {
     font-size: 26px
 }
 
-.nav ul {
+.nav  {
     display: flex;
     list-style-type: none;
     font-size: 14px;
-    margin-bottom: 0
+    margin-bottom: 0;
+    gap:0.5rem
+}
+nav a{
+    color: red;
 }
 
-.nav li {
-    padding-inline:10px}
 
-.nav a {
-    text-decoration: none;
-    color: #000
-}
 
 .social-link img {
     width: 20px
@@ -99,7 +97,8 @@ body {
 .about-me__introduction {
     font-family: 'Spectral';
     font-weight: 800;
-    font-style: italic
+    font-style: italic;
+    font-size: 1rem;
 }
 
 .carousel-item picture {
@@ -180,7 +179,9 @@ body {
     font-weight: 800;
     font-size: 22px
 }
-
+#about-me p {
+    width: 80%
+}
 #services {
     margin: auto;
     background-color: #A8D5D8;
